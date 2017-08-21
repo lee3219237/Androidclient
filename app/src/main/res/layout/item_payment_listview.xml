@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/margin_15"
+    >
+
+    <RelativeLayout
+        android:id="@+id/payment_list_rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="18dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/quan_huikzq"
+        >
+
+        <TextView
+            android:id="@+id/pm_lv_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:layout_marginLeft="32dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/grey_999999"
+            android:text="蜂    币:"
+            />
+
+        <TextView
+            android:id="@+id/pm_lv_tv2"
+            android:layout_alignLeft="@id/pm_lv_tv1"
+            android:layout_below="@id/pm_lv_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/grey_999999"
+            android:text="加息劵:"
+            />
+
+        <TextView
+            android:id="@+id/pm_lv_tv3"
+            android:layout_alignLeft="@id/pm_lv_tv2"
+            android:layout_below="@id/pm_lv_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/grey_999999"
+            android:text="蜂蜜劵:"
+            />
+
+        <TextView
+            android:id="@+id/tv_fengbi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pm_lv_tv1"
+            android:layout_toRightOf="@id/pm_lv_tv1"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/black_3a3a3a"
+            android:text="2枚"
+            />
+
+        <TextView
+            android:id="@+id/tv_jxj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pm_lv_tv2"
+            android:layout_toRightOf="@id/pm_lv_tv2"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/black_3a3a3a"
+            android:text="1.00/1.20/1.50%"
+        />
+
+        <TextView
+            android:id="@+id/tv_fmj"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/pm_lv_tv3"
+            android:layout_toRightOf="@id/pm_lv_tv3"
+            android:layout_marginLeft="8dp"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/black_3a3a3a"
+            android:text="80/100/150元"
+            android:layout_marginBottom="24dp"
+            />
+
+        <Button
+            android:id="@+id/payment_list_btn"
+            android:layout_width="77dp"
+            android:layout_height="27dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="19dp"
+            android:layout_marginTop="31dp"
+            android:background="@drawable/shape_btn_red_line"
+            android:text="立即领取"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/red_fd7d6a"
+            />
+
+        <TextView
+            android:id="@+id/txt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignBottom="@id/pm_lv_tv3"
+            android:layout_marginBottom="@dimen/margin_3"
+            android:layout_marginRight="@dimen/margin_15"
+            android:textSize="11sp"
+            android:textColor="@color/grey_999999"
+            android:text="2017-03-12到期"
+            />
+
+        <View
+            android:layout_width="0.5dp"
+            android:layout_height="80dp"
+            android:layout_toLeftOf="@id/payment_list_btn"
+            android:layout_marginRight="20dp"
+            android:background="@color/grey_dddddd"
+            android:layout_marginTop="18dp"
+
+            />
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_content_title"
+                style="@style/tv_15sp_black_3a3a3a"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/margin_20"
+                android:textSize="@dimen/text_size_18" />
+
+            <TextView
+                android:gravity="center"
+                android:id="@+id/tv_content"
+                style="@style/tv_15sp_black_3a3a3a"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginLeft="@dimen/margin_18"
+                android:layout_marginRight="@dimen/margin_18"
+                android:layout_marginTop="@dimen/margin_20"
+                android:layout_weight="1" />
+
+            <TextView
+                android:id="@+id/tv_img_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/margin_50"
+                android:background="@mipmap/cepjg_fengx"
+                android:gravity="center"
+                android:text="稳健型"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_28" />
+
+            <Button
+                android:id="@+id/btn_go_invest"
+                style="@style/btn_red_grey_rectangle"
+                android:layout_marginBottom="@dimen/margin_12"
+                android:text="去理财" />
+
+            <Button
+                android:id="@+id/btn_restart"
+                style="@style/btn_red_grey_rectangle"
+                android:layout_marginBottom="@dimen/margin_50"
+                android:background="@drawable/shape_white_bg_grey_line_radius_5dp"
+                android:text="重新测评"
+                android:textColor="@color/grey_999999" />
+
+        </LinearLayout>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+</LinearLayout>

@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    tools:context="com.ftoul.androidclient.activitys.RechargeActivity">
+
+    <include layout="@layout/inflater_header"></include>
+
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingBottom="@dimen/margin_15"
+        android:paddingLeft="@dimen/margin_18"
+        android:paddingRight="@dimen/margin_18"
+        android:paddingTop="@dimen/margin_15">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额 :"
+            android:textColor="@color/black_666666"
+            android:textSize="@dimen/text_size_14" />
+
+        <EditText
+            android:id="@+id/et_money"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:background="@null"
+            android:hint="请输入充值金额"
+            android:inputType="numberDecimal"
+            android:padding="@dimen/margin_5"
+            android:textColor="@color/black_666666"
+            android:textColorHint="@color/grey_dddddd"
+            android:textSize="@dimen/text_size_14" />
+    </LinearLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_pay"
+        style="@style/btn_red_grey_rectangle"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginRight="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_20"
+        android:text="充值" />
+    <LinearLayout
+        android:layout_marginTop="@dimen/margin_20"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_10">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方法一: E账户充值 (实时到账)"
+                android:textColor="@color/black_666666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_to_eaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@mipmap/ic_in"
+                android:gravity="center"
+                android:text="图文指引"
+                android:textColor="@color/orange_ffa42c"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:gravity="center_vertical"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="本人银行卡转\n账到华兴E账号"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@mipmap/ic_in" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_centerInParent="true"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="登陆蜂投网\n进行充值"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@mipmap/ic_in" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="下一步选择\n”E账户“充值"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+
+        </LinearLayout>
+        <View
+            android:layout_marginTop="@dimen/margin_15"
+           style="@style/view_line_dd"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_30">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="方法二: 银行卡充值 (T+1到账)"
+                android:textColor="@color/black_666666"
+                android:textSize="@dimen/text_size_15" />
+
+            <TextView
+                android:visibility="invisible"
+                android:id="@+id/tv_to_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:drawablePadding="@dimen/margin_10"
+                android:drawableRight="@mipmap/ic_in"
+                android:gravity="center"
+                android:text="图文指引"
+                android:textColor="@color/orange_ffa42c"
+                android:textSize="@dimen/text_size_13" />
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_marginBottom="@dimen/margin_10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginRight="@dimen/margin_18"
+            android:layout_marginTop="@dimen/margin_20"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="登陆蜂投网\n进行充值"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@mipmap/ic_in" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="55dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:text="下一步绑定\n银行卡充值"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/margin_5"
+                android:background="@mipmap/ic_in"
+                android:visibility="invisible" />
+            <TextView
+                android:visibility="invisible"
+                android:layout_width="0dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_white_bg_grey_line"
+                android:gravity="center"
+                android:minLines="3"
+                android:paddingLeft="@dimen/margin_18"
+                android:paddingRight="@dimen/margin_15"
+                android:text="下一步绑定银行卡充值"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_12" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

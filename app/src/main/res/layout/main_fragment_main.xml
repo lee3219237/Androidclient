@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_main_header"
+        />
+    <com.ftoul.androidclient.ui.SmartScrollView
+        android:scrollbars="none"
+        android:id="@+id/scrollView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="180dp">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/vp_banner"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+
+
+                <com.ftoul.androidclient.ui.ViewPagerPoint
+                    android:id="@+id/vp_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginBottom="@dimen/margin_10"></com.ftoul.androidclient.ui.ViewPagerPoint>
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rl_head"
+                android:layout_width="match_parent"
+                android:layout_height="30dp">
+
+                <com.hanks.htextview.HTextView
+                    android:id="@+id/tv_head_message"
+                    android:layout_width="match_parent"
+                    android:maxLines="1"
+                    android:layout_marginRight="@dimen/margin_8"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="关于XXX的公告"
+                    android:textSize="16sp" />
+
+                <ImageView
+                    android:id="@+id/iv_head_close"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:padding="3dp"
+                    android:src="@mipmap/ic_clear_grey600_24dp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:background="@color/hotpink_FF69B4"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_know_ftoul"
+                    style="@style/tv_main_fragment"
+                    android:text="了解蜂投" />
+
+                <TextView
+                    android:background="@color/lightskyblue"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_freshman_welfare"
+                    style="@style/tv_main_fragment"
+                    android:text="新手福利" />
+
+                <TextView
+                    android:background="@color/khaki"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_ftoul_datas"
+                    style="@style/tv_main_fragment"
+                    android:text="蜂投数据" />
+
+                <TextView
+                    android:background="@color/deepskyblue"
+                    android:layout_height="match_parent"
+                    android:id="@+id/tv_activity"
+                    style="@style/tv_main_fragment"
+                    android:text="活动" />
+            </LinearLayout>
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recyclerview_bid"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </android.support.v7.widget.RecyclerView>
+            <TextView
+                android:padding="@dimen/margin_10"
+                android:text="快速理财，身心理财"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <RelativeLayout
+                android:id="@+id/rl_new_user_bid"
+                android:paddingBottom="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/tv_new_user_title"
+                    android:text="新手专享"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_alignParentRight="true"
+                    android:text="12%-15%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_below="@+id/tv_new_user_title"
+                    android:layout_alignParentRight="true"
+                    android:text="平均预期年化率"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_below="@+id/tv_new_user_title"
+                    android:text="期限短 收益高 新手专享福利"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_regular_bid"
+                android:paddingBottom="@dimen/margin_10"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:id="@+id/tv_regular_title"
+                    android:text="定期理财"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_alignParentRight="true"
+                    android:text="8%-12%"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_below="@+id/tv_regular_title"
+                    android:layout_alignParentRight="true"
+                    android:text="平均预期年化率"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_marginTop="@dimen/margin_10"
+                    android:layout_below="@+id/tv_regular_title"
+                    android:text="新手福利，超高年化收益率"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+    </com.ftoul.androidclient.ui.SmartScrollView>
+
+</LinearLayout>

@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:layout_marginLeft="@dimen/margin_10"
+    android:layout_marginRight="@dimen/margin_10"
+    android:layout_marginTop="@dimen/margin_10"
+    >
+    <com.ftoul.androidclient.ui.couponview.CouponView
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/couponView"
+        android:layout_width="wrap_content"
+        android:minWidth="130dp"
+        android:layout_height="wrap_content"
+        android:background="@color/red_f74c4c"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:cv_is_dash_line_bottom="false"
+        app:cv_is_dash_line_left="false"
+        app:cv_is_dash_line_right="false"
+        app:cv_is_dash_line_top="false"
+        app:cv_is_semicircle_bottom="false"
+        app:cv_is_semicircle_left="true"
+        app:cv_is_semicircle_right="false"
+        app:cv_is_semicircle_top="false"
+        app:cv_semicircle_color="@android:color/white"
+        app:cv_semicircle_gap="@dimen/margin_3"
+        app:cv_semicircle_radius="@dimen/margin_3">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_15"
+            android:layout_marginRight="@dimen/margin_15"
+            android:layout_marginTop="@dimen/margin_25">
+
+            <TextView
+                android:id="@+id/txtNotice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/txtCount"
+                android:text="￥"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_14" />
+
+            <TextView
+                android:id="@+id/txtCount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_5"
+                android:layout_toRightOf="@+id/txtNotice"
+                android:text="100.00"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_20" />
+
+            <TextView
+                android:id="@+id/txt_fm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtCount"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin_8"
+                android:text="现金券"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/text_size_15" />
+        </RelativeLayout>
+    </com.ftoul.androidclient.ui.couponview.CouponView>
+    <RelativeLayout
+        android:id="@+id/rl_right"
+        android:layout_toRightOf="@+id/couponView"
+        android:layout_alignTop="@+id/couponView"
+        android:layout_alignBottom="@+id/couponView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="-5dp"
+        android:background="@drawable/shape_red_line_white_bg"
+        >
+        <TextView
+            android:id="@+id/tv_original"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取来源: 系统赠送"
+            android:textColor="@color/black_666666"
+            android:textSize="@dimen/text_size_15"
+            android:layout_marginTop="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_12"
+            />
+        <TextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2017-16-12 到期"
+            android:textColor="@color/grey_999999"
+            android:paddingBottom="@dimen/margin_5"
+            android:textSize="@dimen/text_size_12"
+            android:layout_marginTop="@dimen/margin_30"
+            android:layout_marginLeft="@dimen/margin_12"
+            android:layout_below="@+id/tv_original"
+            />
+        <Button
+            android:id="@+id/btn_get"
+            android:layout_width="wrap_content"
+            android:layout_height="27dp"
+            android:text="立即领取"
+            android:textColor="@color/red_fd7d6a"
+            android:textSize="@dimen/text_size_15"
+            android:background="@drawable/shape_btn_red_cycle"
+            android:layout_alignBottom="@+id/tv_time"
+            android:layout_toRightOf="@+id/tv_time"
+            android:layout_marginLeft="@dimen/margin_15"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_1"
+            android:background="@drawable/bg_dash_line"
+            android:layout_below="@+id/tv_time"
+            android:layout_alignLeft="@+id/tv_time"
+            android:layout_alignRight="@id/btn_get"
+            android:layout_marginTop="@dimen/margin_10"
+            ></View>
+    </RelativeLayout>
+</RelativeLayout>

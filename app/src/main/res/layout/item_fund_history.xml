@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_item"
+    android:background="@color/white"
+    android:layout_marginBottom="@dimen/margin_1"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_13sp_3a3a3a"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_12"
+        android:text="投资专享" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        style="@style/tv_15sp_black_3a3a3a"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_12"
+        android:text="+99.00" />
+
+    <TextView
+        android:layout_marginBottom="@dimen/margin_12"
+        android:id="@+id/tv_all_fund"
+        style="@style/tv_13sp_999999"
+        android:layout_below="@id/tv_title"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="资产总额：9999" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_alignBottom="@id/tv_all_fund"
+        style="@style/tv_13sp_999999"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="2017-03-12 12:20:20" />
+</RelativeLayout>

@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/rl_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_wod"
+        android:fitsSystemWindows="true"
+        android:paddingTop="@dimen/status_height">
+    </RelativeLayout>
+
+
+    <com.ftoul.androidclient.ui.MyLinearLayout
+        android:id="@+id/ll_body"
+        android:layout_width="match_parent"
+        android:layout_height="597dp"
+        android:background="@color/white"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="登录"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_10"
+            android:background="@color/bg_gray" />
+
+        <LinearLayout
+            android:id="@+id/ll_xinsfl"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/xinsfl"
+                android:text="新手福利" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_3"
+                android:text="待收："
+                android:textColor="@color/grey_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_xinsfl_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="23.00"
+                android:textColor="@color/red_f74c4c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_xiaodt"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/xiaodt"
+                android:text="小贷通" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_3"
+                android:text="待收："
+                android:textColor="@color/grey_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_xiaodt_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="23.00"
+                android:textColor="@color/red_f74c4c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_fengjh"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/fengjh"
+                android:text="蜂计划" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_3"
+                android:text="待收："
+                android:textColor="@color/grey_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_fengjh_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="23.00"
+                android:textColor="@color/red_f74c4c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_fengjx"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/fengjx"
+                android:text="蜂精选" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_3"
+                android:text="待收："
+                android:textColor="@color/grey_999999"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_fengjx_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/margin_10"
+                android:text="23.00"
+                android:textColor="@color/red_f74c4c"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_10"
+            android:background="@color/bg_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_discount_coupon"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/fengbx"
+                android:text="蜂宝箱" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bill_calendar"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/huikrl"
+                android:text="回款日历" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_bill"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/zijjl"
+                android:text="资金记录" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_order_form"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/fengsc"
+                android:text="蜂商城订单" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_10"
+            android:background="@color/bg_gray" />
+
+
+        <LinearLayout
+            android:id="@+id/ll_invite_friend"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/yaoqyl"
+                android:text="邀请有礼" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+
+        <View style="@style/view_line_marginleft_10dp" />
+
+        <LinearLayout
+            android:id="@+id/ll_risk_test"
+            style="@style/ll_userinfo">
+
+            <TextView
+                style="@style/tv_userinfo_16sp"
+                android:drawableLeft="@mipmap/fengmcp"
+                android:text="蜂眸风测" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@mipmap/ic_in" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/margin_10"
+            android:background="@color/bg_gray" />
+    </com.ftoul.androidclient.ui.MyLinearLayout>
+
+</LinearLayout>

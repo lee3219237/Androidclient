@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ftoul.androidclient.activitys.InvestmentDetail2Activity">
+    <include
+        android:id="@+id/include"
+        layout="@layout/inflater_header"
+        ></include>
+    <ScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="项目名称"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="小贷通A1231531"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="投资金额"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_money"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="5000.00"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="预期年化利率"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_range"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="10%"
+                    android:textColor="@color/orange_fc5051"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="还款方式"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_type"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="按月付息，到期还本"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="起息日"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_day"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="2017-03-03"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="投资时间"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="2017-03-03 12:45:23"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+            </RelativeLayout>
+
+            <View style="@style/view_line_marginleft_15dp_e4"></View>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_15">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="合同与协议"
+                    android:textColor="@color/grey_999999"
+                    android:textSize="@dimen/text_size_13" />
+
+                <TextView
+                    android:id="@+id/txt_go"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:drawablePadding="@dimen/margin_5"
+                    android:drawableRight="@mipmap/ic_in"
+                    android:text="查看"
+                    android:textColor="@color/orange_ffa42c"
+                    android:textSize="@dimen/text_size_13" />
+            </RelativeLayout>
+
+            <com.ftoul.androidclient.ui.PagerSlidingTabStrip
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/tabs_height"
+                android:layout_centerInParent="true"
+                android:background="@android:color/white" />
+
+            <com.ftoul.androidclient.ui.ScrollviewViewPager
+                android:id="@+id/viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

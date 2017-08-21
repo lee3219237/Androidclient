@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/status_height">
+
+        <ImageView
+            android:id="@+id/iv_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/ic_clear_grey600_24dp" />
+
+        <TextView
+            android:id="@+id/tv_change_account"
+            style="@style/tv_15sp_gold"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="9.5dp"
+            android:padding="@dimen/margin_10"
+            android:text="切换账号" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/iv_user_icon"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginTop="38dp"
+        android:scaleType="centerInside"
+        android:src="@mipmap/ftoul01_logo" />
+
+    <TextView
+        android:id="@+id/tv_phone_num"
+        style="@style/tv_15sp_red_f74c4c"
+        android:layout_marginTop="@dimen/margin_10" />
+
+    <EditText
+        android:id="@+id/et_phone_num"
+        style="@style/et_main"
+        android:layout_marginTop="20dp"
+        android:drawableLeft="@mipmap/nb_icon"
+        android:hint="请输入手机号"
+        android:paddingLeft="17dp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10">
+
+        <EditText
+            android:id="@+id/et_pwd"
+            style="@style/et_main"
+            android:drawableLeft="@mipmap/pw_icon"
+            android:hint="登录密码"
+            android:inputType="textPassword" />
+
+        <ImageView
+            android:id="@+id/iv_show_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="23dp"
+            android:padding="@dimen/margin_10"
+            android:src="@mipmap/kejian_icon" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/btn_login"
+        style="@style/btn_red_grey_rectangle_login"
+        android:layout_width="match_parent"
+        android:layout_marginTop="28dp"
+        android:enabled="false"
+        android:text="登   录" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="34dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/bg_login" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/tv_horizontal"
+            style="@style/tv_13sp_999999"
+            android:layout_centerHorizontal="true"
+            android:text="或" />
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginRight="@dimen/margin_8"
+            android:layout_marginTop="7dp"
+            android:layout_toLeftOf="@id/tv_horizontal"
+            android:background="@color/gray_ddd" />
+
+        <View
+            android:visibility="invisible"
+            android:layout_width="80dp"
+            android:layout_height="@dimen/margin_1"
+            android:layout_marginLeft="@dimen/margin_8"
+            android:layout_marginTop="7dp"
+            android:layout_toRightOf="@id/tv_horizontal"
+            android:background="@color/gray_ddd" />
+
+        <ImageView
+            android:visibility="invisible"
+            android:id="@+id/iv_weixin_login"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_below="@id/tv_horizontal"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:background="@mipmap/wechat" />
+
+        <TextView
+            style="@style/tv_13sp_999999"
+            android:layout_below="@+id/iv_weixin_login"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="微信登录"
+            android:visibility="invisible" />
+
+        <View
+            android:id="@+id/view_horizontal"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_50"
+            android:background="@color/gray_ddd" />
+
+        <TextView
+            android:id="@+id/tv_forget_pwd"
+            style="@style/tv_13sp_999999"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_toLeftOf="@+id/view_horizontal"
+            android:padding="15dp"
+            android:text="忘记密码" />
+
+        <TextView
+            android:id="@+id/tv_register"
+            style="@style/tv_13sp_999999"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="35dp"
+            android:layout_toRightOf="@id/view_horizontal"
+            android:padding="15dp"
+            android:text="注册账号" />
+
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/sharedialog"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textColor="@color/black_3a3a3a"
+        android:textSize="20sp"
+        android:padding="20dp"
+        android:gravity="center"
+        android:text="分享给朋友"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <GridView
+        android:numColumns="3"
+        android:verticalSpacing="18dp"
+        android:id="@+id/gridview_share_dialog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"></GridView>
+    <View
+        android:layout_marginTop="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="0.6dp"
+        android:background="@color/black_3a3a3a"></View>
+   <!-- <RelativeLayout
+        android:paddingBottom="26dp"
+        android:paddingTop="20dp"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginLeft="40dp"
+            android:drawableTop="@mipmap/share_copy"
+            android:text="复制"
+            android:gravity="center"
+            android:drawablePadding="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:drawableTop="@mipmap/share_collect"
+            android:text="收藏"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="40dp"
+            android:drawableTop="@mipmap/share_report"
+            android:text="举报"
+            android:drawablePadding="8dp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RelativeLayout>-->
+</LinearLayout>

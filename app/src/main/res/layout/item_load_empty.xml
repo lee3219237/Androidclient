@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:paddingBottom="@dimen/margin_30"
+    >
+    <ImageView
+        android:src="@mipmap/bg_empty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/tv_empty_msg"
+        android:layout_marginTop="@dimen/margin_15"
+        style="@style/tv_13sp_999999"
+        android:textSize="15sp"
+        android:text="全部标都被抢完了"
+        />
+    <TextView
+        android:layout_marginTop="@dimen/margin_10"
+        style="@style/tv_13sp_999999"
+        android:textSize="15sp"
+        android:textColor="#cccccc"
+        android:text="点击刷新，重新试试"
+        />
+</LinearLayout>

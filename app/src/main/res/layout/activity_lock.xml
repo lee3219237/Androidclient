@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dimgray"
+    android:orientation="vertical">
+    <TextView
+        android:layout_marginRight="8dp"
+        android:padding="10dp"
+        android:text="跳过"
+        android:textColor="@color/white"
+        android:id="@+id/tv_skip"
+        android:layout_gravity="right"
+        android:layout_marginTop="@dimen/status_height"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/iv_user_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="40dp"
+        android:background="@mipmap/ic_launcher" />
+
+    <TextView
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginTop="25dp"
+        android:id="@+id/tv_tips"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="请设置手势密码"/>
+
+    <com.ftoul.androidclient.locking.GestureLockView
+        android:id="@+id/gesturelock"
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        />
+
+</LinearLayout>

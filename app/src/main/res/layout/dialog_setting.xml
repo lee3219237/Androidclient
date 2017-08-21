@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="270dp"
+    android:layout_height="126dp"
+    android:background="@drawable/shape_dialog_bg_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:textStyle="bold"
+        android:layout_marginTop="@dimen/margin_20"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_16"
+        android:text="是否要拨打电话给客服？"
+        android:layout_gravity="center_horizontal"
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/tv_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_5"
+        android:text="客服服务时间：9:00 - 21:00"
+        android:textColor="@color/black"
+        android:textSize="@dimen/text_size_13" />
+
+    <View
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5"
+        android:background="@color/bg_gray"
+        />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/blue32a2e3"
+            android:text="取消"
+            android:id="@+id/tv_close"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+        <View
+            android:layout_width="@dimen/margin_0.5"
+            android:layout_height="@dimen/margin_50"
+            android:background="@color/bg_gray"/>
+        <TextView
+            android:gravity="center"
+            android:textSize="@dimen/text_size_18"
+            android:textColor="@color/blue32a2e3"
+            android:text="确定"
+            android:id="@+id/tv_ok"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="50dp" />
+    </LinearLayout>
+</LinearLayout>

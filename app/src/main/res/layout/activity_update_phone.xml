@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_update_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_25"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_grey_12sp"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:text="原手机号码"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/tv_old_phone"
+            style="@style/tv_15sp_red_f74c4c"
+            android:text="138748***92" />
+
+    </LinearLayout>
+    <TextView
+        style="@style/tv_grey_12sp"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="如未收到请致电客服 400-966-8889"
+        android:textSize="13sp" />
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/et_message_code_old"
+            style="@style/et_main"
+            android:hint="短信验证码" />
+
+        <com.ftoul.androidclient.ui.TimeButton
+            android:id="@+id/btn_get_code_old"
+            style="@style/time_button"
+            android:text="获取验证码" />
+    </RelativeLayout>
+    <TextView
+        android:layout_margin="@dimen/margin_18"
+        android:layout_width="match_parent"
+        android:text="正常情况下若原手机收不到验证码,请联系客服"
+        android:textSize="@dimen/text_size_12"
+        android:textColor="@color/grey_999999"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/et_new_phone"
+        style="@style/et_main"
+        android:hint="请输入新手机号码" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/et_image_code"
+            style="@style/et_main"
+            android:hint="验证码" />
+
+        <ImageView
+            android:id="@+id/iv_image_code"
+            android:layout_width="@dimen/margin_100"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/margin_33"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_25"
+            android:src="@mipmap/zhengzaihuoqu" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_20">
+
+        <EditText
+            android:id="@+id/et_message_code_new"
+            style="@style/et_main"
+            android:hint="短信验证码" />
+
+        <com.ftoul.androidclient.ui.TimeButton
+            android:id="@+id/btn_get_code_new"
+            style="@style/time_button"
+            android:text="获取验证码" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/btn_commit"
+        style="@style/btn_red_grey_rectangle"
+        android:layout_marginTop="@dimen/margin_25"
+        android:text="确定" />
+</LinearLayout>

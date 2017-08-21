@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries">
+        <item>Russia</item>
+        <item>Canada</item>
+        <item>China</item>
+        <item>United States</item>
+        <item>Brazil</item>
+        <item>Australia</item>
+        <item>India</item>
+        <item>Argentina</item>
+        <item>Kazakhstan</item>
+        <item>Algeria</item>
+        <item>Democratic Republic of the Congo</item>
+        <item>Greenland</item>
+        <item>Saudi Arabia</item>
+        <item>Mexico</item>
+        <item>Indonesia</item>
+        <item>Sudan</item>
+        <item>Libya</item>
+        <item>Iran</item>
+        <item>Mongolia</item>
+        <item>Peru</item>
+        <item>Chad</item>
+        <item>Niger</item>
+        <item>Angola</item>
+        <item>Mali</item>
+        <item>South Africa</item>
+        <item>Colombia</item>
+        <item>Ethiopia</item>
+        <item>Bolivia</item>
+        <item>Mauritania</item>
+        <item>Egypt</item>
+    </string-array>
+
+    <string-array name="continents">
+        <item>Africa</item>
+        <item>Europe</item>
+        <item>Asia</item>
+        <item>North America</item>
+        <item>South America</item>
+        <item>Antarctica</item>
+        <item>Australia</item>
+    </string-array>
+
+    <string-array name="question_titles">
+        <item>1、您的年龄在哪个范围？</item>
+        <item>2、您有多少年的投资经验？</item>
+        <item>3、您的家庭年收入水平？（不包括投资性收入）</item>
+        <item>4、您的房车情况？</item>
+        <item>5、您的投资方法？</item>
+        <item>6、对于股票、债券、基金、信托、房地产投资、定期存款、银行理财产品、券商理财产品、期货、期权、贵金属、外汇、P2P等投资工具，您接触过或者了解多少种投资工具？</item>
+        <item>7、您的已投资金额占您可使用的流动资金的比重是多少？ </item>
+        <item>8、您对P2P不同的产品类型的风险及收益有所了解吗？</item>
+        <item>9、您在蜂投网或者其他P2P平台有过投资经历吗？</item>
+        <item>10、如果您有10万元用于投资，出现以下情况的不同投资收益，您会选择哪一种？</item>
+        <item>11、您在蜂投网投资产品中理想的投资期限是多长？</item>
+        <item>12、假设您最近发现一个投资项目，投资收益比较可观，在中国南海靠近菲律宾的一个岛上。如果您要选择投资这个项目，需要您亲自实地去考察并且签订合同；但是由于现在南海问题比较紧张，随时可能会爆发战争，您去的话不仅人身安全得不到保障，而且一旦战争爆发，投资风险也比较大，但是如果战争没有爆发，您的投资收益非常可观。如果您有时间，有金钱，您会？</item>
+        <item>13、您的投资P2P的资金未来主要用于？</item>
+    </string-array>
+
+    <string-array name="question_1">
+        <item>30岁以下</item>
+        <item>30岁-40岁</item>
+        <item>40岁-55岁</item>
+        <item>55岁以上</item>
+    </string-array>
+    <string-array name="question_1_score">
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="question_2">
+        <item>1年以下</item>
+        <item>1年-5年</item>
+        <item>5年-10年</item>
+        <item>10年以上</item>
+    </string-array>
+    <string-array name="question_2_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_3">
+        <item>10万元以下</item>
+        <item>10万元-30万元</item>
+        <item>30万-50万</item>
+        <item>50万以上</item>
+    </string-array>
+    <string-array name="question_3_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_4">
+        <item>有房有车 </item>
+        <item>有房无车</item>
+        <item>无房有车</item>
+        <item>无房无车</item>
+    </string-array>
+    <string-array name="question_4_score">
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="question_5">
+        <item>精通组合投资</item>
+        <item>技术和基本面分析相结合</item>
+        <item>靠专家指导</item>
+        <item>看运气，跟风投资，不会认真分析</item>
+    </string-array>
+    <string-array name="question_5_score">
+        <item>4</item>
+        <item>3</item>
+        <item>1</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="question_6">
+        <item>1种或者以下</item>
+        <item>2种-4种</item>
+        <item>5种以上</item>
+    </string-array>
+    <string-array name="question_6_score">
+        <item>1</item>
+        <item>2</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_7">
+        <item>0%</item>
+        <item>0%至10%</item>
+        <item>10%至25%</item>
+        <item>25%至50%</item>
+        <item>大于50%</item>
+    </string-array>
+    <string-array name="question_7_score">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_8">
+        <item>非常了解</item>
+        <item>还算熟悉</item>
+        <item>听说过一些</item>
+        <item>从来没听过</item>
+    </string-array>
+    <string-array name="question_8_score">
+        <item>4</item>
+        <item>3</item>
+        <item>2</item>
+        <item>0</item>
+    </string-array>
+    <string-array name="question_9">
+        <item>有</item>
+        <item>没有</item>
+    </string-array>
+    <string-array name="question_9_score">
+        <item>2</item>
+        <item>1</item>
+    </string-array>
+    <string-array name="question_10">
+        <item>有100%的机会获得1000元现金</item>
+        <item>有50%的机会5万元现金</item>
+        <item>有25%的机会获得50万元现金</item>
+        <item>有10%的机会获得100万元现金（追求高风险高收益，风险承受能力强，4分）</item>
+    </string-array>
+    <string-array name="question_10_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_11">
+        <item>30天以内</item>
+        <item>1个月-6个月</item>
+        <item>6个月-12个月</item>
+        <item>12个月以上</item>
+    </string-array>
+    <string-array name="question_11_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_12">
+        <item>南海啊，万一我刚到那里就爆发战争，生命安全都得不到保障，还是不去了</item>
+        <item>有点心动，但是一个人去那里太危险了，我还是雇几个保镖才安全</item>
+        <item>查看相关新闻和咨询专业人士，只要战争不会在短期内爆发就前往</item>
+        <item>直接去啊，战争什么的都是浮云，我才不信菲律宾敢和中国开火</item>
+    </string-array>
+    <string-array name="question_12_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="question_13">
+        <item>养老防老</item>
+        <item>子女教育、医疗费用</item>
+        <item>增值财富，实现财富自由</item>
+        <item>满足个人消费</item>
+    </string-array>
+    <string-array name="question_13_score">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+    </string-array>
+    <string-array name="risk_test_result_content_title">
+        <item>稳健型</item>
+        <item>进取型</item>
+        <item>激进型</item>
+    </string-array>
+    <string-array name="risk_test_result_content">
+        <item>稳健型投资者</item>
+        <item>进取型投资者</item>
+        <item>激进型投资者</item>
+    </string-array>
+</resources>

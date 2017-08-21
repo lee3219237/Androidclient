@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/transparent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_15"
+        android:background="@drawable/shape_btn_white"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/shape_red_top" />
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_20"
+            android:text="发现新版本"
+            android:textColor="@color/black_3a3a3a"
+            android:textSize="@dimen/text_size_20" />
+
+        <TextView
+            android:text="1、提升App启动速度\n2、更新投资细节\n3、部分细节优化"
+            android:lineSpacingExtra="6dp"
+            android:id="@+id/tv_content"
+            style="@style/tv_15sp_black_3a3a3a"
+            android:layout_marginBottom="@dimen/margin_30"
+            android:layout_marginLeft="@dimen/margin_40"
+            android:layout_marginTop="@dimen/margin_30"
+            android:textColor="@color/black_3a3a3a" />
+
+        <Button
+            android:id="@+id/btn_update"
+            style="@style/btn_red_grey_rectangle"
+            android:layout_marginBottom="@dimen/margin_25"
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_marginRight="@dimen/margin_18"
+            android:text="立即升级" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:background="@mipmap/qux_gengxts" />
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+
+    <EditText
+        android:layout_marginTop="25dp"
+        android:id="@+id/et_phone_num"
+        style="@style/et_main"
+        android:hint="手机号码"
+        android:inputType="number"
+        android:singleLine="true" />
+
+
+    <RelativeLayout
+        android:layout_marginTop="25dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            style="@style/et_main"
+            android:id="@+id/et_msg_code"
+            android:hint="短信验证码"
+            android:singleLine="true"
+            android:textSize="14sp" />
+
+        <com.ftoul.androidclient.ui.TimeButton
+            android:id="@+id/btn_get_code"
+            android:text="获取验证码"
+            style="@style/time_button" />
+    </RelativeLayout>
+
+    <Button
+        android:enabled="false"
+        android:id="@+id/btn_register"
+        style="@style/btn_red_grey_rectangle"
+        android:layout_marginTop="32dp"
+        android:text="下一步" />
+
+</LinearLayout>

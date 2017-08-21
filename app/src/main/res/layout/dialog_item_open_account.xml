@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/transparent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="@dimen/margin_50"
+        android:id="@+id/iv_main"
+        android:layout_width="316dp"
+        android:layout_height="266dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/create_account"
+        />
+    <Button
+        android:id="@+id/btn_create_account"
+        android:text="立即开通"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:background="@drawable/shape_sky_blue_corner"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/iv_main"
+        android:layout_width="250dp"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_height="42dp" />
+    <ImageView
+        android:id="@+id/iv_close"
+        android:layout_marginTop="@dimen/margin_15"
+        android:padding="@dimen/margin_15"
+        android:src="@mipmap/close_tc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_main"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

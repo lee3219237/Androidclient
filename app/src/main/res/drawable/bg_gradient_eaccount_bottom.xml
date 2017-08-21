@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 设置圆角
+    注意：	bottomRightRadius是左下角而不是右下角  bottomLeftRadius右下角-->
+    <corners
+        android:bottomLeftRadius="@dimen/margin_5"
+        android:bottomRightRadius="@dimen/margin_5" />
+    <!-- 设置颜色渐变 -->
+    <gradient
+        android:angle="0"
+        android:endColor="#f1607f"
+        android:startColor="#fbb68c"
+        android:type="linear" />
+
+
+    <!-- 设置边框-->
+    <stroke
+        android:width="0px"
+        android:color="@color/orange_unclickable_start" />
+</shape>
+

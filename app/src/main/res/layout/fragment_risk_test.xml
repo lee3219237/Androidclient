@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/tv_15sp_black_3a3a3a"
+        android:id="@+id/tv_question_title"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginLeft="@dimen/margin_15"
+        android:layout_marginTop="@dimen/margin_20"
+        android:layout_marginRight="@dimen/margin_15"
+        android:textSize="17sp" />
+
+    <View style="@style/view_line_dd" />
+
+    <RadioGroup
+        android:id="@+id/radio_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rb_1"
+            android:text="问题1"
+            style="@style/rb_risk_test" />
+
+        <RadioButton
+            android:id="@+id/rb_2"
+            style="@style/rb_risk_test"  />
+
+        <RadioButton
+            android:id="@+id/rb_3"
+            style="@style/rb_risk_test"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb_4"
+            style="@style/rb_risk_test"
+            android:visibility="invisible" />
+
+        <RadioButton
+            android:id="@+id/rb_5"
+            style="@style/rb_risk_test"
+            android:visibility="invisible" />
+    </RadioGroup>
+</LinearLayout>

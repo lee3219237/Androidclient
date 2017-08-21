@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/bg_gray"
+    >
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#fffbf0"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="已接入银行存管,资金安全再上新台阶"
+            android:textSize="@dimen/text_size_14"
+            android:textColor="@color/orange_eda649"
+            android:layout_gravity="center"
+            android:drawableLeft="@mipmap/chatu"
+            android:gravity="center"
+            android:drawablePadding="@dimen/margin_10"
+            />
+    </FrameLayout>
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.ftoul.androidclient.ui.recycleloading.XRecyclerView
+            android:id="@+id/xrecycleview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        </com.ftoul.androidclient.ui.recycleloading.XRecyclerView>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.ftoul.androidclient.ui.MyFramelayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/my_framelayout"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.ftoul.androidclient.ui.recycleloading.XRecyclerView
+        android:id="@+id/recyclerview_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></com.ftoul.androidclient.ui.recycleloading.XRecyclerView>
+</com.ftoul.androidclient.ui.MyFramelayout>

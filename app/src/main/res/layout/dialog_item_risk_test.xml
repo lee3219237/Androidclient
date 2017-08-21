@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_dialog_bg_white"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tv_title"
+        style="@style/tv_15sp_black_3a3a3a"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="33dp"
+        android:text="让自己更懂理财"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:layout_width="165dp"
+        android:layout_height="146dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_25"
+        android:background="@drawable/chatu_fenx" />
+
+    <TextView
+        style="@style/tv_15sp_black_666666"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_25"
+        android:text="测一测我的风险偏好" />
+
+    <Button
+        android:id="@+id/btn_start_test"
+        android:layout_width="206dp"
+        android:layout_height="36dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="@dimen/margin_25"
+        android:textColor="#7ea7ff"
+        android:paddingBottom="@dimen/margin_3"
+        android:textSize="@dimen/text_size_15"
+        android:background="@mipmap/button_fengx"
+        android:text="开始" />
+
+    <TextView
+        android:id="@+id/tv_not_test"
+        style="@style/tv_13sp_3a3a3a"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_5"
+        android:gravity="center"
+        android:padding="@dimen/margin_10"
+        android:text="不要测了，我就是保守型"
+        android:textColor="#a6c3ff" />
+</LinearLayout>

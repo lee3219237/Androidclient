@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:scrollbars="none"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_hkrl"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_18"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_plan_month"
+                        style="@style/tv_13sp_666666"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/yjdz"
+                        android:drawablePadding="@dimen/margin_12"
+                        android:text="预计5月到账（元）" />
+
+                    <TextView
+                        android:id="@+id/tv_plan_money"
+                        style="@style/tv_15sp_red_f74c4c"
+                        android:text="0.00" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/margin_18"
+                    android:layout_marginLeft="@dimen/margin_18"
+                    android:layout_marginRight="@dimen/margin_18"
+                    android:layout_marginTop="@dimen/margin_18"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/tv_has_month"
+                        style="@style/tv_13sp_666666"
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:drawableLeft="@mipmap/yidaozhang"
+                        android:drawablePadding="@dimen/margin_12"
+                        android:text="5月已到账（元）" />
+
+                    <TextView
+                        android:id="@+id/tv_has_money"
+                        style="@style/tv_15sp_red_f74c4c"
+                        android:text="0.00" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+                android:id="@+id/calendar_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/margin_10"
+                android:layout_marginRight="@dimen/margin_10"></com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+
+            <TextView
+                style="@style/tv_12sp_grey"
+                android:layout_marginBottom="@dimen/margin_10"
+                android:layout_marginLeft="@dimen/margin_18"
+                android:text="说明：蓝色为投资日，红色为还款日，黄色为选定日期" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_10"
+                android:background="@color/bg_gray" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_gravity="bottom"
+                    style="@style/view_line_dd"/>
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tab_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabTextColor="@color/black_666666"
+                    app:tabPaddingStart="16dp"
+                    app:tabPaddingEnd="16dp"
+                    app:tabIndicatorColor="@color/red_fd7d6a"
+                    app:tabSelectedTextColor="@color/red_fd7d6a"
+                    app:tabIndicatorHeight="1dp"
+                    app:tabTextAppearance="@style/tab_tv_style">
+                </android.support.design.widget.TabLayout>
+
+            </FrameLayout>
+            <com.ftoul.androidclient.ui.ScrollviewViewPager
+                android:id="@+id/view_pager"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    tools:context="com.ftoul.androidclient.activitys.web.BidDetailActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/inflater_header"></include>
+
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:layout_below="@id/include"
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+     >
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ></WebView>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_50"
+        android:layout_alignParentBottom="true">
+
+        <TextView
+            android:id="@+id/txt_online"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/margin_30"
+            android:layout_marginRight="@dimen/margin_30"
+            android:drawablePadding="@dimen/margin_5"
+            android:drawableTop="@mipmap/zaixkf_biaodxq"
+            android:text="在线客服"
+            android:textColor="@color/grey_999999"
+            android:textSize="@dimen/text_size_12" />
+
+        <Button
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/txt_online"
+            android:background="@color/red_fd7d6a"
+            android:text="马上加入"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/text_size_18" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name" translatable="false">蜂投理财</string>
+    <!--strings of loading more start   -->
+    <string name="listview_header_hint_normal">下拉刷新...</string>
+    <string name="listview_header_hint_release">释放刷新...</string>
+    <string name="listview_loading">努力加载中...</string>
+    <string name="nomore_loading">没有更多内容了</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_done">刷新完成...</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="tel">400-966-8889</string>
+    <!--strings of loading more end   -->
+    <string name="txt_xiaotieshi">开通成功后, 您将获得如下权益:\n1.用户资金与平台资金完全隔离\n2.资金由银行统一管理\n3.资金操作透明,高效便捷\n4.专款专户,保障资金安全</string>
+</resources>

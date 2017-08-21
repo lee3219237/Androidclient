@@ -1,0 +1,100 @@
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:id="@id/header"
+        android:background="@mipmap/bg_main_head"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/viewpager_header_height"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="@dimen/title_height"
+                android:fitsSystemWindows="true"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_headerLeft"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/iv_left"
+                        android:src="@mipmap/return_icon"
+                        android:layout_width="@dimen/margin_10"
+                        android:layout_height="@dimen/margin_18"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/headerTitle"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="2.0"
+                    android:gravity="center"
+                    android:singleLine="true"
+                    android:text="蜂投理财"
+                    android:textColor="@color/white"
+                    android:textSize="18sp" />
+
+                <RelativeLayout
+                    android:id="@+id/rl_headerRight"
+                    android:layout_width="0dp"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1.0"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/tv_right"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="14dp"
+                        android:padding="2dp"
+                        android:textColor="@color/white"
+                        android:textSize="15sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_customer_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@id/tv_right"
+                        android:padding="8dp"
+                        android:src="@mipmap/ic_headset_mic_black_24dp"
+                        android:visibility="invisible" />
+
+                </RelativeLayout>
+            </LinearLayout>
+
+            <include layout="@layout/inflater_xdt_money_show"></include>
+        </LinearLayout>
+        <com.ftoul.androidclient.ui.PagerSlidingTabStrip
+            android:background="@android:color/white"
+            android:id="@id/tabs"
+            android:layout_centerInParent="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/tabs_height"
+            />
+    </LinearLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

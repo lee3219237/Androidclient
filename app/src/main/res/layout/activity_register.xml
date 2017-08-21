@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="45dp"
+        android:background="@drawable/ic_ftoul_logo" />
+
+    <EditText
+        android:id="@+id/et_phone_num"
+        style="@style/et_main"
+        android:layout_marginTop="55dp"
+        android:hint="手机号码" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_15">
+
+        <EditText
+            android:id="@+id/et_image_code"
+            style="@style/et_main"
+            android:hint="验证码" />
+
+        <ImageView
+            android:id="@+id/iv_image_code"
+            android:layout_width="@dimen/margin_100"
+            android:scaleType="fitXY"
+            android:layout_height="@dimen/margin_33"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/margin_25"
+            android:src="@mipmap/zhengzaihuoqu" />
+    </RelativeLayout>
+
+    <EditText
+        style="@style/et_main"
+        android:id="@+id/et_invite_code"
+        android:layout_marginTop="@dimen/margin_15"
+        android:hint="邀请码(选填)" />
+
+    <Button
+        android:id="@+id/btn_next"
+        style="@style/btn_red_grey_rectangle"
+        android:layout_marginTop="@dimen/margin_25"
+        android:enabled="false"
+        android:text="下一步" />
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:clipToPadding="true"
+    android:orientation="vertical">
+
+    <com.ftoul.androidclient.ui.NoScrollViewPager
+        android:id="@+id/vp_main"
+        android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_height="0dp"></com.ftoul.androidclient.ui.NoScrollViewPager>
+
+
+    <include layout="@layout/inflater_bottom_bar" />
+
+</LinearLayout>
+<!--<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--android:id="@+id/myCoordinator"-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent"-->
+<!--android:background="@color/white">-->
+
+<!--<com.ftoul.androidclient.ui.MyNestedScrollView-->
+    <!--android:id="@+id/myScrollingContent"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent">-->
+
+    <!--<LinearLayout-->
+        <!--android:orientation="vertical"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+
+        <!--<com.ftoul.androidclient.ui.NoScrollViewPager-->
+            <!--android:id="@+id/vp_main"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="680dp"></com.ftoul.androidclient.ui.NoScrollViewPager>-->
+    <!--</LinearLayout>-->
+
+    <!--&lt;!&ndash; 滚动的内容在这 &ndash;&gt;-->
+
+<!--</com.ftoul.androidclient.ui.MyNestedScrollView>-->
+
+<!--</android.support.design.widget.CoordinatorLayout>-->

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@mipmap/xinshouzx"
+        android:drawablePadding="@dimen/margin_10"
+        android:padding="@dimen/margin_15"
+        android:text="新手专享"
+        android:textColor="@color/black_3a3a3a"
+        android:textSize="@dimen/text_size_16" />
+
+    <View style="@style/view_line_dd" />
+
+    <LinearLayout
+        android:id="@+id/ll_empty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/bg_gray"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_marginTop="55dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:src="@mipmap/bg_empty" />
+
+        <TextView
+            android:layout_marginBottom="70dp"
+            style="@style/tv_13sp_999999"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="暂无新手标"
+            android:textColor="#cccccc"
+            android:textSize="15sp" />
+    </LinearLayout>
+</LinearLayout>

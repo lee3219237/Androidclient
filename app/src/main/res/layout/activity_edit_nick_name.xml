@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <com.ftoul.androidclient.ui.AutoEdt
+        android:id="@+id/autosearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginBottom="@dimen/margin_30"
+        android:layout_marginTop="@dimen/margin_30"
+        android:background="@color/white"
+        android:hint="请输入昵称"
+        android:imeOptions="actionSearch"
+        android:padding="@dimen/margin_15"
+        android:singleLine="true"
+        android:textColor="@color/black_666666"
+        android:textColorHint="@color/grey_999999"
+        android:textSize="@dimen/text_size_14" />
+</LinearLayout>

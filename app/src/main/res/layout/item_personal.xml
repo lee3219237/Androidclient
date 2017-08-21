@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_product_item"
+        style="@style/ll_userinfo"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/xinsfl" />
+
+        <TextView
+            android:id="@+id/tv_product_name"
+            style="@style/tv_userinfo_16sp"
+            android:layout_marginLeft="@dimen/margin_10"
+            android:text="新手福利" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_3"
+            android:text="待收："
+            android:textColor="@color/grey_999999"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_product_money"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/margin_10"
+            android:text="23.00"
+            android:textColor="@color/red_f74c4c"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_in" />
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/view_line_marginleft_10dp" />
+
+    <View
+        android:visibility="gone"
+        android:id="@+id/view_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/bg_gray" />
+</LinearLayout>

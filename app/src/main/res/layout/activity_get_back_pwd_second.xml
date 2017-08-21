@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <EditText
+        android:id="@+id/et_pwd"
+        style="@style/et_main"
+        android:textSize="14sp"
+        android:layout_marginTop="25dp"
+        android:hint="请设置新密码"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/et_pwd_agn"
+        style="@style/et_main"
+        android:layout_marginTop="@dimen/margin_25"
+        android:hint="确认新密码"
+        android:inputType="textPassword"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_finish"
+        style="@style/btn_red_grey_rectangle"
+        android:layout_marginTop="32dp"
+        android:text="完成" />
+
+</LinearLayout>

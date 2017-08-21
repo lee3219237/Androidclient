@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ftoul.androidclient.activitys.web.HuiFuWebViewActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:background="@color/blue_3ba0fa"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"/>
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+        <ImageView
+            android:id="@+id/iv_change"
+            android:paddingLeft="@dimen/margin_18"
+            android:paddingTop="@dimen/margin_12"
+            android:paddingBottom="@dimen/margin_10"
+            android:paddingRight="@dimen/margin_30"
+            android:src="@mipmap/change_index"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </FrameLayout>
+
+</LinearLayout>

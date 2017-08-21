@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="@color/bg_gray" />
+
+    <RadioGroup
+        android:visibility="visible"
+        android:id="@+id/linToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:drawableTop="@drawable/select_btn_main"
+            android:id="@+id/rb_main"
+            style="@style/main_footbar_radio"
+            android:text="首页"
+            android:checked="true"
+           />
+
+        <RadioButton
+            android:drawableTop="@drawable/select_btn_invest"
+            android:id="@+id/rb_investment"
+            android:text="投资"
+            style="@style/main_footbar_radio" />
+
+        <RadioButton
+            android:drawableTop="@drawable/select_btn_discover"
+            android:text="发现"
+            android:drawablePadding="4.5dp"
+            android:id="@+id/rb_discover"
+            style="@style/main_footbar_radio"
+          />
+
+        <RadioButton
+            android:drawableTop="@drawable/select_btn_personal"
+            android:text="我的"
+            android:id="@+id/rb_personal"
+            style="@style/main_footbar_radio"
+           />
+    </RadioGroup>
+</LinearLayout>

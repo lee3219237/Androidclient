@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+    <TextView
+        android:text="快速投资，省心理财"
+       style="@style/tv_dimgrey_15sp" />
+
+    <RelativeLayout
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20"
+        android:layout_marginTop="@dimen/margin_1"
+        android:id="@+id/rl_regular_bid"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_20"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="@dimen/margin_20"
+            android:id="@+id/tv_regular_title"
+            android:text="定期理财"
+            style="@style/tv_bold_title"  />
+        <TextView
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_alignParentRight="true"
+            android:text="8%-12%"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_below="@+id/tv_regular_title"
+            android:layout_alignParentRight="true"
+            android:text="历史平均年化利率"
+            style="@style/tv_grey_12sp" />
+        <TextView
+            style="@style/tv_grey_12sp"
+            android:layout_marginTop="@dimen/margin_8"
+            android:layout_below="@+id/tv_regular_title"
+            android:text="多种期限 省时省心"
+            />
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center_horizontal"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/grey_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin_3"
+                android:drawableLeft="@mipmap/fengkong_index"
+                android:text="严密风控"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/grey_999999"
+                android:text="严密多重风控审核流程"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:textSize="12sp"
+                android:textColor="@color/grey_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawablePadding="@dimen/margin_3"
+                android:drawableLeft="@mipmap/zhenxuan_index"
+                android:text="严格甄选"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/grey_999999"
+                android:text="产品标的真实有效"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_gravity="center"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:drawablePadding="@dimen/margin_3"
+                android:textSize="12sp"
+                android:textColor="@color/grey_999999"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:drawableLeft="@mipmap/tishi_index"
+                android:text="投资谨慎"
+                />
+            <TextView
+                android:layout_marginTop="@dimen/margin_5"
+                android:textColor="@color/grey_999999"
+                android:text="市场有风险 投资需谨慎"
+                android:textSize="10sp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

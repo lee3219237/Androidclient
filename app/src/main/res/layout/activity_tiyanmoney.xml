@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:paddingTop="@dimen/status_height"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@mipmap/bg_main_head"
+        >
+
+        <View
+            android:id="@+id/paddingView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            />
+
+        <include layout="@layout/inflater_title"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tv_tiyan_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="17dp"
+                android:layout_marginLeft="18dp"
+                android:textSize="30sp"
+                android:textColor="@color/white"
+                android:text="0.00"
+                />
+
+            <TextView
+                android:id="@+id/tiyan_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_tiyan_money"
+                android:layout_below="@id/tv_tiyan_money"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/white"
+                android:text="理财体验金总额(金)"
+                />
+
+            <TextView
+                android:id="@+id/tv_tiyan_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tiyan_tv1"
+                android:layout_below="@id/tiyan_tv1"
+                android:layout_marginTop="19dp"
+                android:textSize="@dimen/text_size_20"
+                android:textColor="@color/white"
+                android:text="0.00"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/tv_tiyan_2"
+                android:layout_below="@id/tv_tiyan_2"
+                android:layout_marginTop="10dp"
+                android:textSize="@dimen/text_size_12"
+                android:textColor="@color/white"
+                android:text="累计收益(元)"
+                android:layout_marginBottom="30dp"
+                />
+            
+            <Button
+                android:id="@+id/tiyan_btn"
+                android:layout_width="88dp"
+                android:layout_height="31dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="18dp"
+                android:layout_marginTop="27dp"
+                android:background="@drawable/shape_btn_wt_line"
+                android:text="立即使用"
+                android:textSize="@dimen/text_size_14"
+                android:textColor="@color/white"
+                />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+    
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:background="@color/white"
+        >
+        
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tiyan_tablayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:tabTextColor="@color/black_666666"
+            app:tabIndicatorColor="@color/red_fd7d6a"
+            app:tabSelectedTextColor="@color/red_fd7d6a"
+            app:tabIndicatorHeight="@dimen/margin_1"
+            app:tabTextAppearance="@style/tablayout_tv_style1"
+            />
+        
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            
+            <View
+                android:layout_width="0.5dp"
+                android:layout_height="20dp"
+                android:background="@color/gray_e4"
+                android:layout_centerInParent="true"
+                />
+            
+        </RelativeLayout>
+
+    </FrameLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="@color/bg_gray"
+        />
+
+
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <android.support.v4.view.ViewPager
+        android:id="@+id/tiyan_viewpage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        >
+    </android.support.v4.view.ViewPager>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+
+
+
+</LinearLayout>

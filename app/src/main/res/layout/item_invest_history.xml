@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginRight="@dimen/margin_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_15sp_black_666666"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_weight="1"
+            android:text="投资项目" />
+
+        <TextView
+            android:id="@+id/tv_tou_zxm"
+            style="@style/tv_15sp_black_3a3a3a"
+            android:text="小贷通3982394" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_0.5"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginRight="@dimen/margin_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_13sp_999999"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_weight="1"
+            android:text="投资金额" />
+
+        <TextView
+            android:id="@+id/tv_tou_zje"
+            style="@style/tv_15sp_black_3a3a3a"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View style="@style/view_line_marginleft_15dp_e4" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin_18"
+        android:layout_marginRight="@dimen/margin_18"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/tv_13sp_999999"
+            android:layout_width="0dp"
+            android:layout_marginBottom="@dimen/margin_20"
+            android:layout_marginTop="@dimen/margin_20"
+            android:layout_weight="1"
+            android:text="投资时间" />
+
+        <TextView
+            android:id="@+id/tv_tou_zsj"
+            style="@style/tv_15sp_black_3a3a3a"
+            android:text="0.00" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/bg_gray" />
+</LinearLayout>

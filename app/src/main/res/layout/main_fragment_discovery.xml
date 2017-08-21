@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <include layout="@layout/inflater_header" />
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></WebView>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+    <!--<com.ftoul.androidclient.ui.SmartScrollView-->
+        <!--android:scrollbars="none"-->
+        <!--android:id="@+id/scrollView"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:orientation="vertical">-->
+            <!--<RelativeLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="180dp">-->
+
+                <!--<android.support.v4.view.ViewPager-->
+                    <!--android:id="@+id/vp_banner"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="match_parent"></android.support.v4.view.ViewPager>-->
+
+                <!--<com.ftoul.androidclient.ui.ViewPagerPoint-->
+                    <!--android:id="@+id/vp_point"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_alignParentBottom="true"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginBottom="@dimen/margin_10"></com.ftoul.androidclient.ui.ViewPagerPoint>-->
+            <!--</RelativeLayout>-->
+
+            <!--<LinearLayout-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="80dp"-->
+                <!--android:gravity="center"-->
+                <!--android:orientation="horizontal">-->
+
+                <!--<TextView-->
+                    <!--android:background="@color/hotpink_FF69B4"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/tv_know_ftoul"-->
+                    <!--style="@style/tv_main_fragment"-->
+                    <!--android:text="蜂社区" />-->
+
+                <!--<TextView-->
+                    <!--android:background="@color/lightskyblue"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/tv_freshman_welfare"-->
+                    <!--style="@style/tv_main_fragment"-->
+                    <!--android:text="蜂商城" />-->
+
+                <!--<TextView-->
+                    <!--android:background="@color/khaki"-->
+                    <!--android:layout_height="match_parent"-->
+                    <!--android:id="@+id/tv_ftoul_datas"-->
+                    <!--style="@style/tv_main_fragment"-->
+                    <!--android:text="阅读" />-->
+            <!--</LinearLayout>-->
+            <!--<TextView-->
+                <!--android:id="@+id/tv_panic"-->
+                <!--android:padding="@dimen/margin_10"-->
+                <!--android:text="今日必抢"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerview_panic"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>-->
+            <!--<TextView-->
+                <!--android:drawableRight="@mipmap/ic_in"-->
+                <!--android:id="@+id/tv_capture_treasure"-->
+               <!--android:padding="@dimen/margin_10"-->
+                <!--android:text="趣味夺宝"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<android.support.v7.widget.RecyclerView-->
+                <!--android:id="@+id/recyclerview_treasures"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"></android.support.v7.widget.RecyclerView>-->
+            <!--<TextView-->
+                <!--android:padding="@dimen/margin_10"-->
+                <!--android:drawableRight="@mipmap/ic_in"-->
+                <!--android:text="最新活动"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+            <!--<include layout="@layout/item_bid"/>-->
+            <!--<TextView-->
+                <!--android:drawableRight="@mipmap/ic_in"-->
+                <!--android:padding="@dimen/margin_10"-->
+                <!--android:text="邀请有礼"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content" />-->
+        <!--</LinearLayout>-->
+
+
+    <!--</com.ftoul.androidclient.ui.SmartScrollView>-->
+
+</LinearLayout>

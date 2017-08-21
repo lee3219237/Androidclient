@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <include layout="@layout/inflater_header" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_jpush"
+        style="@style/ll_userinfo">
+
+        <TextView
+            style="@style/tv_userinfo_14sp"
+            android:text="推送设置" />
+
+        <CheckBox
+            android:clickable="false"
+            android:id="@+id/checkbox_jpush"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_10"
+        android:background="@color/bg_gray" />
+
+    <LinearLayout
+        android:id="@+id/ll_clear_cache"
+        style="@style/ll_userinfo">
+
+        <TextView
+            style="@style/tv_userinfo_14sp"
+            android:text="清除缓存" />
+
+        <TextView
+            android:id="@+id/tv_clear_cache"
+            style="@style/tv_14sp_181818"
+            android:text="10.0MB" />
+    </LinearLayout>
+
+    <View style="@style/view_line_marginleft_15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_about_us"
+        style="@style/ll_userinfo">
+
+        <TextView
+            style="@style/tv_userinfo_14sp"
+            android:text="关于我们" />
+
+        <TextView style="@style/tv_14sp_181818" />
+    </LinearLayout>
+
+    <View style="@style/view_line_marginleft_15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_inspect_version"
+        style="@style/ll_userinfo">
+
+        <TextView
+            style="@style/tv_userinfo_14sp"
+            android:text="检查更新" />
+
+        <TextView
+            android:id="@+id/tv_version"
+            style="@style/tv_14sp_181818" />
+    </LinearLayout>
+
+    <View style="@style/view_line_marginleft_15dp" />
+
+    <LinearLayout
+        android:id="@+id/ll_company_tel"
+        style="@style/ll_userinfo">
+
+        <TextView
+            style="@style/tv_userinfo_14sp"
+            android:text="客服电话" />
+
+        <TextView
+            style="@style/tv_14sp_181818"
+            android:text="@string/tel" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/bg_gray">
+
+        <Button
+            android:id="@+id/btn_exit_login"
+            style="@style/btn_red_grey_rectangle"
+            android:layout_marginTop="@dimen/margin_30"
+            android:text="退出账号" />
+    </FrameLayout>
+
+</LinearLayout>

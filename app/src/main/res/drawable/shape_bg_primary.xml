@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" >
+
+    <!-- topLeftRadius、topRightRadius 为半圆角矩形上半部分的圆角半径，bottomLeftRadius、bottomRightRadius 为矩形下半部分的圆角半径，值为0表示直角 -->
+    <gradient
+        android:angle="180"
+        android:endColor="#F84D47"
+        android:startColor="#FC8D4E" />
+
+
+</shape>

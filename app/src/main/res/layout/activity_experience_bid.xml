@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context="com.ftoul.androidclient.activitys.ExperienceBidActivity">
+
+    <include
+        android:id="@+id/include"
+        layout="@layout/inflater_header" />
+
+    <com.ftoul.androidclient.ui.MyFramelayout
+        android:id="@+id/my_framelayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/bg_tiyanbiao"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_range"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_25"
+                        android:text="15"
+                        android:textColor="@color/red_f74c4c"
+                        android:textSize="65sp" />
+
+                    <TextView
+                        style="@style/tv_12sp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_5"
+                        android:text="预期年化利率"
+                        android:textColor="@color/black_666666" />
+
+                    <TextView
+                        android:id="@+id/tv_period"
+                        style="@style/tv_12sp_grey"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginTop="@dimen/margin_25"
+                        android:layout_marginBottom="@dimen/margin_10"
+                        android:text="投资当天开始计息，3天后收益到账，零成本体验投资乐趣" />
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_10"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="124dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        android:layout_marginRight="@dimen/margin_18">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="还款方式"
+                            android:textColor="@color/grey_999999"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/txt_experience_repayment_methods"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="本金回收,到期付息"
+                            android:textColor="@color/black_3a3a3a"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View style="@style/view_line_marginleft_18dp_e4" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        android:layout_marginRight="@dimen/margin_18">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="预期收益"
+                            android:textColor="@color/grey_999999"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/txt_experience_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0.00元"
+                            android:textColor="@color/black_3a3a3a"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+
+                    <View style="@style/view_line_marginleft_18dp_e4" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="41dp"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        android:layout_marginRight="@dimen/margin_18">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="当前体验金"
+                            android:textColor="@color/grey_999999"
+                            android:textSize="@dimen/text_size_13" />
+
+                        <TextView
+                            android:id="@+id/txt_experience_coupon"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:text="0张"
+                            android:textColor="@color/black_3a3a3a"
+                            android:textSize="15sp" />
+                    </RelativeLayout>
+                </LinearLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_10"
+                    android:background="@color/bg_gray" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        android:layout_marginRight="@dimen/margin_18"
+                        android:layout_marginTop="20dp">
+
+                        <TextView
+                            android:id="@+id/textView4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:text="|"
+                            android:textColor="@color/orange_ffa42c"
+                            android:textSize="@dimen/text_size_15" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="9dp"
+                            android:layout_toRightOf="@+id/textView4"
+                            android:text="项目介绍"
+                            android:textColor="@color/orange_ffa42c"
+                            android:textSize="@dimen/text_size_15" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/txt_experience_introduce"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_18"
+                        android:layout_marginRight="@dimen/margin_18"
+                        android:layout_marginTop="13dp"
+                        android:lineSpacingExtra="@dimen/margin_5"
+                        android:maxLines="3"
+                        android:text="投资理财体验标是蜂投网针对借款项目推出的一款定期理财产品。投资人投资的资金由系统灵活、高效、自动分散投资到不同的项目中，更好的为投资人创造效益。"
+                        android:textColor="@color/black_3a3a3a"
+                        android:textSize="@dimen/text_size_12" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:background="@color/bg_gray">
+
+                    <Button
+                        android:id="@+id/btn_commit"
+                        style="@style/btn_red_grey_half_round_experience"
+                        android:layout_centerInParent="true"
+                        android:text=" 立即体验" />
+                </RelativeLayout>
+            </LinearLayout>
+        </ScrollView>
+    </com.ftoul.androidclient.ui.MyFramelayout>
+
+</LinearLayout>

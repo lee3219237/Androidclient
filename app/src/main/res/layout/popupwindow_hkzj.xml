@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/margin_20"
+            android:layout_marginRight="@dimen/margin_20"
+            android:background="@drawable/bg_huikzq">
+
+
+            <ImageView
+                android:id="@+id/pop_iv1"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="28dp"
+                android:src="@drawable/shape_round_fd7d6a" />
+
+            <TextView
+                android:id="@+id/pop_tv1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/pop_iv1"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@id/pop_iv1"
+                android:text="蜂币"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <LinearLayout
+                android:id="@+id/pop_ll"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/pop_tv1"
+                android:layout_below="@id/pop_tv1"
+                android:layout_marginTop="16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="系统赠送您蜂币"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:id="@+id/pop_tv_fb_num"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" 2 "
+                    android:textColor="@color/red_fd7d6a"
+                    android:textSize="@dimen/text_size_15" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="枚"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_15" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/pop_line1"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/pop_ll"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/gray_e4" />
+
+            <ImageView
+                android:id="@+id/pop_iv2"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_below="@id/pop_line1"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/shape_round_ff9e63" />
+
+            <TextView
+                android:id="@+id/pop_tv2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/pop_iv2"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@id/pop_iv2"
+                android:text="加息劵"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <RelativeLayout
+                android:id="@+id/pop_rl1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@id/pop_tv2"
+                android:layout_below="@id/pop_tv2"
+                android:layout_marginTop="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/pop_rl2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignTop="@id/pop_rl1"
+                android:layout_toRightOf="@id/pop_rl1"
+                android:layout_marginLeft="46dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/pop_rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignTop="@id/pop_rl1"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/pop_rb1"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableTop="@drawable/selector_checkbox"
+                    android:paddingTop="2dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/pop_rb2"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableTop="@drawable/selector_checkbox"
+                    android:paddingTop="9dp"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/pop_rb3"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableBottom="@drawable/selector_checkbox"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </RadioGroup>
+
+
+            <View
+                android:id="@+id/pop_line2"
+                android:layout_width="match_parent"
+                android:layout_height="0.5dp"
+                android:layout_below="@id/pop_rl1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="17dp"
+                android:background="@color/gray_e4" />
+
+            <ImageView
+                android:id="@+id/pop_iv3"
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_below="@id/pop_line2"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="19dp"
+                android:src="@drawable/shape_round_3eaafd" />
+
+            <TextView
+                android:id="@+id/pop_tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/pop_iv3"
+                android:layout_marginLeft="12dp"
+                android:layout_marginTop="-5dp"
+                android:layout_toRightOf="@id/pop_iv3"
+                android:text="蜂蜜劵"
+                android:textColor="@color/grey_999999"
+                android:textSize="@dimen/text_size_14" />
+
+            <RelativeLayout
+                android:id="@+id/pop_rl3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignLeft="@id/pop_tv6"
+                android:layout_below="@id/pop_tv6"
+                android:layout_marginTop="17dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0.80%"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentBottom="true"
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/pop_rl4"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignTop="@id/pop_rl3"
+                android:layout_toRightOf="@id/pop_rl3"
+                android:layout_marginLeft="46dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_centerVertical="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="有效期 3 天"
+                    android:textColor="@color/black_3a3a3a"
+                    android:textSize="@dimen/text_size_16"
+                    android:layout_alignParentBottom="true"
+                    />
+
+            </RelativeLayout>
+
+            <RadioGroup
+                android:id="@+id/pop_rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_alignTop="@id/pop_rl3"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="30dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/pop_rb4"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableTop="@drawable/selector_checkbox"
+                    android:paddingTop="2dp"
+                    android:button="@null"
+                    android:checked="true"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/pop_rb5"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableTop="@drawable/selector_checkbox"
+                    android:paddingTop="9dp"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+                <RadioButton
+                    android:id="@+id/pop_rb6"
+                    android:layout_width="30dp"
+                    android:layout_height="0dp"
+                    android:drawableBottom="@drawable/selector_checkbox"
+                    android:button="@null"
+                    android:layout_weight="1"
+                    android:gravity="center"
+                    />
+
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/pop_btn"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_below="@id/pop_rl3"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/shape_btn_fd7d6a"
+                android:text="确认领取"
+                android:textColor="@color/white"
+                android:textSize="@dimen/text_size_18" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:layout_below="@id/pop_btn"
+                android:background="@color/white" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</LinearLayout>

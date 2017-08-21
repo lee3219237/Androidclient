@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_gray"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            android:background="@mipmap/bg_default"
+            android:id="@+id/vp_banner"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"></android.support.v4.view.ViewPager>
+
+
+        <com.ftoul.androidclient.ui.ViewPagerPoint
+            android:id="@+id/vp_point"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/vp_banner"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="@dimen/margin_10"></com.ftoul.androidclient.ui.ViewPagerPoint>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_head"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_marginLeft="@dimen/margin_18"
+            android:layout_gravity="center_vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/gonggao_index" />
+
+        <TextView
+            android:paddingLeft="@dimen/margin_5"
+            android:id="@+id/tv_head_message"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:maxLines="1"
+            android:textColor="@color/grey_999999"
+            android:textSize="13sp" />
+
+        <ImageView
+
+            android:id="@+id/iv_head_close"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/margin_12"
+            android:padding="@dimen/margin_6"
+            android:src="@mipmap/quxiao_index" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="95dp"
+        android:layout_marginTop="@dimen/margin_1"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_know_ftoul"
+            style="@style/tv_main_fragment"
+            android:drawableTop="@mipmap/liaojft_index"
+            android:text="了解蜂投" />
+
+        <TextView
+            android:id="@+id/tv_freshman_welfare"
+            style="@style/tv_main_fragment"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/anqbz_index"
+            android:text="安全保障" />
+
+        <TextView
+            android:id="@+id/tv_ftoul_datas"
+            style="@style/tv_main_fragment"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/fengtsj_index"
+            android:text="蜂投数据" />
+
+        <TextView
+            android:id="@+id/tv_activity"
+            style="@style/tv_main_fragment"
+            android:layout_height="match_parent"
+            android:drawableTop="@mipmap/yaoqyl_index"
+            android:text="敬请期待" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_new_user_bid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_10"
+        android:background="@color/white"
+        android:paddingBottom="@dimen/margin_20"
+        android:paddingLeft="@dimen/margin_20"
+        android:paddingRight="@dimen/margin_20">
+
+        <TextView
+            android:id="@+id/tv_new_user_title"
+            style="@style/tv_bold_title"
+            android:layout_marginTop="23dp"
+            android:text="新手专享" />
+
+        <TextView
+            style="@style/tv_bold_title"
+            android:layout_marginLeft="@dimen/margin_5"
+            android:layout_marginTop="23dp"
+            android:layout_toRightOf="@id/tv_new_user_title"
+            android:text="年化收益12%-15%"
+            android:textColor="@color/goldenrod" />
+
+        <TextView
+            style="@style/tv_grey_12sp"
+            android:layout_below="@+id/tv_new_user_title"
+            android:layout_marginTop="@dimen/margin_10"
+            android:text="新手专属福利 投资期限短 预期收益高" />
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="57.5dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/chatu_index" />
+    </RelativeLayout>
+
+    <TextView
+        style="@style/tv_dimgrey_15sp"
+        android:layout_marginBottom="@dimen/margin_1"
+        android:text="热门推荐" />
+
+</LinearLayout>

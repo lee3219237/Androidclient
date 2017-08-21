@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_msg_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/margin_1"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/margin_18"
+    android:paddingRight="@dimen/margin_18">
+
+    <ImageView
+        android:id="@+id/iv_gold_point"
+        android:layout_width="7dp"
+        android:layout_height="7dp"
+        android:layout_marginTop="@dimen/margin_15"
+        android:background="@drawable/shape_gold_point" />
+
+    <TextView
+        android:id="@+id/tv_title_msg"
+        style="@style/tv_15sp_black_3a3a3a"
+        android:layout_marginLeft="@dimen/margin_10"
+        android:layout_marginTop="@dimen/margin_10"
+        android:layout_toRightOf="@id/iv_gold_point"
+        android:text="活动奖励" />
+
+    <TextView
+        android:id="@+id/tv_sendTime"
+        style="@style/tv_13sp_999999"
+        android:layout_below="@id/tv_title_msg"
+        android:layout_marginBottom="@dimen/margin_10"
+        android:layout_marginLeft="17dp"
+        android:layout_marginTop="@dimen/margin_10"
+        android:text="2016-10-19"
+        android:textColor="@color/gray" />
+
+
+</RelativeLayout>
